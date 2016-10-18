@@ -1,0 +1,12 @@
+{
+    "name": "#LINE Messaging API test PHP",
+    "description": "heroku 上にデプロイされる LINE Messaging APIのサーバースクリプト",
+    "repository": "https://github.com/hrmz/line-messagingapi-test.git",
+    "logo": "https://bita.jp/dml/wp-content/uploads/2016/04/dijimalab_logo.png",
+    "keywords": ["php", "line-messaging-api"],
+    "env": {
+      "LINE_CHANNEL_ACCESS_TOKEN": {
+        "description": "Channel Access Token (LINE Bot Channel Dashboard で確認できます)"
+      }
+    }
+}
