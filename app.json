@@ -6,7 +6,7 @@
     "keywords": ["php", "line-messaging-api"],
     "env": {
       "LINE_CHANNEL_ACCESS_TOKEN": {
-        "description": "Channel Access Token (LINE Bot Channel Dashboard で確認できます)"
+        "description": "Channel Access Token (LINE developers の Basic information で確認できます)"
       }
     }
 }
