@@ -21,26 +21,26 @@ if($type != "text"){
 if ($text == 'はい') {
   $response_format_text = [
     "type" => "template",
-    "altText" => "こちらの〇〇はいかがですか？",
+    "altText" => "精算項目は何ですか？",
     "template" => [
       "type" => "buttons",
-      "thumbnailImageUrl" => "https://" . $_SERVER['SERVER_NAME'] . "/img1.jpg",
-      "title" => "○○レストラン",
-      "text" => "お探しのレストランはこれですね",
+      "thumbnailImageUrl" => "https://" . $_SERVER['SERVER_NAME'] . "/jpy.jpg",
+      "title" => "精算項目は何ですか？",
+      "text" => "次の中から選んでください",
       "actions" => [
           [
             "type" => "postback",
-            "label" => "予約する",
+            "label" => "飲食費",
             "data" => "action=buy&itemid=123"
           ],
           [
             "type" => "postback",
-            "label" => "電話する",
+            "label" => "交通費",
             "data" => "action=pcall&itemid=123"
           ],
           [
             "type" => "uri",
-            "label" => "詳しく見る",
+            "label" => "観光地利用料",
             "uri" => "https://" . $_SERVER['SERVER_NAME'] . "/"
           ],
           [
@@ -132,10 +132,10 @@ if ($text == 'はい') {
 } else {
   $response_format_text = [
     "type" => "template",
-    "altText" => "こんにちわ 何かご用ですか？（はい／いいえ）",
+    "altText" => "こんにちわ 何か精算申請ありますか？（はい／いいえ）",
     "template" => [
         "type" => "confirm",
-        "text" => "こんにちわ 何かご用ですか？",
+        "text" => "こんにちわ 何か精算申請ありますか？",
         "actions" => [
             [
               "type" => "message",
